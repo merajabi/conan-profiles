@@ -11,7 +11,7 @@ os=Windows
 
 [conf]
 tools.cmake.cmaketoolchain:generator=Visual Studio 17 2022
-#tools.microsoft.msbuild:installation_path=C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64\
+tools.microsoft.msbuild:installation_path=C:/Program Files/Microsoft Visual Studio/2022/Professional/
 #tools.microsoft.msbuild:verbosity=Normal
 tools.env.virtualenv:powershell=True
-tools.build:cxxflags=[ "/utf-8" ]
+

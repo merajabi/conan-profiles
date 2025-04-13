@@ -13,8 +13,6 @@ os=Windows
 # Ninja Generator with MSVC compiler only works on MS Developer console, Because vcvars.bat do not set all environment variables which are present on MS developer console.
 tools.cmake.cmaketoolchain:generator=Ninja
 tools.microsoft.msbuild:installation_path=C:/Program Files (x86)/Microsoft Visual Studio/2017/Professional/
-#tools.microsoft.msbuild:vs_version=15
 #tools.microsoft.msbuild:verbosity=Normal
 tools.env.virtualenv:powershell=True
-#tools.build:cxxflags=[ "/utf-8" ]
-#tools.build:compiler_executables =  { 'c' : "C:/Program Files (x86)/Microsoft Visual Studio/2017/Professional/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/cl.exe", 'cpp' : "C:/Program Files (x86)/Microsoft Visual Studio/2017/Professional/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/cl.exe" , 'link': "C:/Program Files (x86)/Microsoft Visual Studio/2017/Professional/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/link.exe" }
+
