@@ -1,0 +1,18 @@
+[settings]
+arch=x86
+build_type=RelWithDebInfo
+compiler=Visual Studio
+compiler.cppstd=20
+compiler.runtime=MT
+compiler.version=17
+os=Windows
+
+[options]
+
+[conf]
+tools.cmake.cmaketoolchain:generator=Visual Studio 17 2022
+tools.microsoft.msbuild:installation_path=C:/Program Files/Microsoft Visual Studio/2022/Professional/
+#tools.microsoft.msbuild:verbosity=Normal
+tools.env.virtualenv:powershell=True
+
+
