@@ -19,14 +19,18 @@ This repository contains a set of pre-configured Conan profiles for Linux and Wi
 - **Generators**:
   - MSBuild
   - Ninja
-- **Tested on**: Windows 10 PowerShell, WSL2
+- **Tested on**: Windows 10 PowerShell
+
+### Cross Compilation
+- **Compiler**: mingw
+- **Tested on**: still under development
 
 ## Naming Convention
 
 Profiles follow this naming pattern:
 
 ```
-A_Pattern.os_arch_compiler_std.Generator.Runtime.Buildtype
+OS_Arch_Compiler_std.Generator.Runtime.Buildtype
 ```
 
 Examples:
@@ -51,11 +55,13 @@ Where:
 ## Known Issues
 
 - **WSL1**: Due to filesystem bugs in WSL1, Conan may not work correctly. Please use WSL2 instead.
-
+- **Ninja**: Ninja Generator with MSVC compiler only works on MS Developer Powershell, Because vcvars.bat do not set all environment variables correctly.
+- **mingw**: still under development
+ 
 ## Usage
 
 1. Copy the desired profile files to your Conan profiles directory (typically `~/.conan/profiles` on Linux or `%USERPROFILE%\.conan\profiles` on Windows)
-2. Or use with Conan commands:
+2. Or use profile path with Conan commands:
 
 ```bash
 conan install . --profile=path/to/conan-profiles/linux_x64_gcc11_std20.Make.Static.Debug
